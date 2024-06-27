@@ -1,0 +1,55 @@
+.root {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 2px solid #1677ff31;
+    background-color: #1677ff2d;
+    border-radius: 4px;
+    padding: 6px 12px;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.block {
+    flex: 1;
+    :first-child {
+        font-weight: 500;
+    }
+    span {
+        color: rgba(48, 48, 48, 0.4);
+    }
+    pre {
+        font-style: italic;
+        line-height: 18px;
+    }
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.complete_btn,
+.delete_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.complete_btn:hover,
+.delete_btn:hover {
+    opacity: 0.6;
+}
+
+.complete_btn {
+    background-color: rgba(91, 192, 45, 0.5);
+}
+.delete_btn {
+    background-color: rgba(206, 47, 47, 0.5);
+}
